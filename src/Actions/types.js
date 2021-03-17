@@ -1,0 +1,2 @@
+export const NEXTDISPLAY="NEXTDISPLAY";
+export const NEXTSUBJECT="NEXTSUBJECT";

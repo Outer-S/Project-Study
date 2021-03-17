@@ -1,0 +1,50 @@
+#subjects{
+    position: relative;
+    width: 100%;
+    height: 10vw;
+    background: #FFFFFF;
+}
+#subjects-list-container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.subjects-list-class{
+    position:absolute;
+    width: auto;
+    height: 10vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+#subject{
+    position: relative;
+    width: 32vw;
+    height: 10vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.subject-img{
+    width: 7vw;
+    height: 7vw;
+}
+.subject-tilte{
+    font-size: 1.5vw;
+}
+
+#subjects-rotation-0{
+    transform: translateX(0vw);
+}
+#subjects-rotation-1{
+    transform: translateX(-32vw);
+}
+#subjects-rotation-2{
+    transform: translateX(-64vw);
+}
+#subjects-rotation-3{
+    transform: translateX(-96vw);
+}

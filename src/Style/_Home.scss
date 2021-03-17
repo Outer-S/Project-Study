@@ -1,0 +1,154 @@
+#home{
+    position: relative;
+    top:0;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 50vw;
+    overflow: hidden;
+}
+#home-display-holder{
+    position: relative;
+    width: 95vw;
+    height: 50vw;
+    display: flex;
+    flex-direction: row;
+   
+}
+#home-media-holder{
+    position: relative;
+    width: 4vw;
+    
+}
+// Change The height Here to Control the distance between Facebook insta ... icons
+#home-media-list{
+    position: absolute;
+    
+    top: 0.5vw;
+    width: 4vw;
+    height: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    
+   
+}
+
+.home-media{
+    display: block;
+    position: relative;
+    left: 0.5vw;
+    width: 4vw;
+    height: 4vw;
+    img{
+        width: 3vw;
+        height: 3vw;
+    }
+}
+
+// HOMEDISPLAY STYLE
+.home-display{
+    position: relative;
+    display: flex;
+    width: 95vw;
+    height: 50vw;
+    flex-direction: column;
+}
+#home-display-1{
+    right: 5vw;
+    z-index: 0;
+}
+#home-display-2{
+    position: absolute;
+    right: 2.5vw;
+    z-index: -1;
+}
+#home-display-3{
+    position: absolute;
+    right: 0;
+    z-index: -2;
+}
+#display-1-img{
+    position: absolute;
+    width: 95vw;
+    height: 50vw;
+   
+    left: 0;
+}
+#display-1-title{
+    color: #FFFFFF;
+    position: relative;
+    font-size: 2.5vw;
+    line-height: 5vw;
+    left: 25vw;
+    top: 10vw;
+}
+#display-1-inputlist{
+    position: absolute;
+    top:31vw;
+    left: 22vw;
+    background-color: #FFFFFF;
+    width: 55vw;
+    height: 6vw;
+    border-radius: 3vw;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+}
+.display-1-inputimage{
+    position: relative;
+    width: 3vw;
+    height: 3vw;
+    margin-right: 3vw;
+}
+.display-1-input{
+    position: relative;
+    bottom:0.5vw;
+    right: 1.5vw;
+    border-radius: 1vw;
+    outline: none;
+    border: none;
+    height: 3vw;
+}
+#display-1-submitinput{
+    position: absolute;
+    top: 0.5vw;
+    right: 1vw;
+    cursor: pointer;
+    border-radius: 5vw;
+    border: none;
+    outline: none;
+    
+    width: 10vw;
+    height: 5vw;
+    color: #FFFFFF;
+    font-size: 2vw;
+    background: #286A9A;
+}
+
+//Next Button
+#home-next-button-holder{
+    position: absolute;
+    right: -0.5vw;
+    top:35vw;
+    width: 4vw;
+    height: 10vw;
+    
+}
+#home-next-button{
+    position: relative;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    width: 4vw;
+    height: 4vw;
+    img{
+        width: 4vw;
+        height: 4vw;
+    }
+}
