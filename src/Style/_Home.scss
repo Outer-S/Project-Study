@@ -1,0 +1,622 @@
+#home {
+  position: relative;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 50vw;
+  overflow: hidden;
+}
+#home-display-holder {
+  position: relative;
+  width: 96vw;
+  height: 50vw;
+  display: flex;
+  flex-direction: row;
+}
+
+#home-media-holder {
+  position: relative;
+  width: 1vw;
+  z-index: 999;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+// Change The height Here to Control the distance between Facebook insta ... icons
+#home-media-list {
+  position: absolute;
+  top: 2.5vw;
+  width: 4vw;
+  height: 16vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+  animation: drop 1.5s ease;
+}
+
+.home-media {
+  display: block;
+  position: relative;
+  left: 0.9vw;
+  width: 4vw;
+  height: 4vw;
+  img {
+    width: 2.3vw;
+    height: 2.3vw;
+  }
+}
+
+// HOMEDISPLAY STYLE
+.home-display {
+  position: relative;
+  display: flex;
+  width: 95vw;
+  height: 50vw;
+  flex-direction: column;
+}
+#home-display-1 {
+  right: 2vw;
+  z-index: 0;
+  filter: drop-shadow(0px 4px 4px #000000);
+}
+#home-display-2 {
+  position: absolute;
+  right: 1.5vw;
+  z-index: -1;
+  filter: drop-shadow(0px 4px 4px #000000);
+}
+#home-display-3 {
+  position: absolute;
+  right: 0;
+  z-index: -2;
+  filter: drop-shadow(0px 4px 4px #000000);
+}
+#display-1-img {
+  position: absolute;
+  width: 95vw;
+  height: 50vw;
+  left: 0;
+}
+#display-1-title {
+  color: #ffffff;
+  position: relative;
+  font-size: 2.5vw;
+  line-height: 2.8vw;
+  left: 22vw;
+  top: 21vw;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  animation: drop 1.5s ease;
+}
+
+#display-2-title {
+  color: #ffffff;
+  position: relative;
+  font-size: 3.5vw;
+  line-height: 3.5vw;
+  left: 23vw;
+  top: 21vw;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+#display-3-title {
+  color: #ffffff;
+  position: relative;
+  font-size: 2.5vw;
+  line-height: 3.5vw;
+  left: 17vw;
+  top: 21vw;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+#display-1-inputlist {
+  position: absolute;
+  top: 31vw;
+  left: 20vw;
+  background-color: #ffffff;
+  width: 60vw;
+  height: 5.5vw;
+  border-radius: 3vw;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.display-1-inputimage {
+  position: relative;
+  width: 2vw;
+  height: 2vw;
+  margin-right: 10vw;
+  margin-top: 1.5vh;
+}
+.display-1-input {
+  position: relative;
+  bottom: 0.1vw;
+  right: 9vw;
+  border-radius: 1vw;
+  outline: none;
+  border: none;
+  height: 3vw;
+  font-weight: lighter;
+  font-size: 2.3vh;
+  width: 15vw;
+}
+#display-1-submitinput {
+  position: absolute;
+  top: 0.5vw;
+  right: 0.5vw;
+  cursor: pointer;
+  border-radius: 5vw;
+  border: none;
+  outline: none;
+
+  width: 10vw;
+  height: 4.5vw;
+  color: #ffffff;
+  font-size: 1.2vw;
+  font-weight: lighter;
+  background: #286a9a;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  &:hover {
+    background-color: #3a83b8;
+  }
+}
+
+//Next Button
+#home-next-button-holder {
+  position: absolute;
+  right: -0.5vw;
+  top: 35vw;
+  width: 4vw;
+  height: 10vw;
+}
+#home-next-button {
+  position: relative;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  width: 3.4vw;
+  height: 3.4vw;
+  right: 0.2vw;
+  img {
+    width: 3.5vw;
+    height: 2.5vw;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+  &:hover {
+    filter: drop-shadow(0px 4px 4px rgba(1, 4, 148, 0.25));
+    animation: none;
+  }
+  animation: next 1s ease-in-out 1s infinite normal both;
+}
+
+#hero-buttons-container {
+  position: relative;
+  top: -1vh;
+  width: 50vw;
+  height: 5vw;
+}
+// If you want to change the distance between the buttons just change the width of this Down here
+#hero-buttons-list {
+  position: absolute;
+  top: 0.25vw;
+  left: 22vw;
+  height: 5vw;
+  width: 25vw;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.hero-navigation-button {
+  position: relative;
+  display: block;
+  text-align: center;
+  color: #ffffff;
+  width: 12vw;
+  height: 4.5vw;
+  line-height: 4.5vw;
+  border-radius: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5vw;
+  text-align: center;
+  font-weight: bold;
+  top: 40vh;
+  left: 8.7vw;
+}
+
+#join-us {
+  border-radius: 50px;
+  color: #fff;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    border-radius: 50px;
+    z-index: -2;
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: lighten(black, 15%);
+    transition: all 0.3s;
+    border-radius: 50px;
+    z-index: -1;
+  }
+  &:hover {
+    color: #fff;
+    &:before {
+      width: 100%;
+    }
+  }
+}
+
+#for-parents {
+  background-color: white;
+  color: black;
+  left: 10vw;
+  width: 30vw;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+    z-index: -2;
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: darken(rgb(255, 255, 255), 15%);
+    transition: all 0.3s;
+    border-radius: 50;
+    z-index: -1;
+  }
+  &:hover {
+    color: black;
+    &:before {
+      width: 100%;
+    }
+  }
+}
+
+#teacher-join-us {
+  border-radius: 25px;
+  color: #fff;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  top: 58vh;
+  left: 1vw;
+  width: 38vw;
+  filter: drop-shadow(0px 4px 4px rgba(39, 39, 39, 0.25));
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    border-radius: 25px;
+    z-index: -2;
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: lighten(black, 15%);
+    transition: all 0.3s;
+    border-radius: 25px;
+    z-index: -1;
+  }
+  &:hover {
+    color: #fff;
+    &:before {
+      width: 100%;
+    }
+  }
+}
+
+@keyframes drop {
+  0% {
+    opacity: 0;
+    transform: translateY(-80px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes next {
+  0% {
+    transform: translateX(2px);
+  }
+
+  50% {
+    transform: translateX(-6px);
+  }
+
+  100% {
+    transform: translateX(2px);
+  }
+}
+
+@media (max-width: 1024px) {
+  #hero-buttons-list {
+    top: -4vw;
+  }
+
+  #teacher-join-us {
+    top: 52vh;
+  }
+}
+
+@media (max-width: 991.98px) {
+  #hero-buttons-list {
+    top: -7vw;
+  }
+
+  #teacher-join-us {
+    top: 51.5vh;
+  }
+}
+
+@media (max-width: 776px) {
+  #teacher-join-us {
+    top: 40.5vh;
+    left: 9vw;
+    width: 53vw;
+  }
+
+  .hero-navigation-button {
+    width: 15vw;
+    height: 5.5vw;
+    line-height: 5.6vw;
+    font-size: 2.5vw;
+    top: 31vh;
+    left: 12vw;
+  }
+
+  #display-2-title {
+    color: #ffffff;
+    position: relative;
+    font-size: 5vw;
+    line-height: 5vw;
+    left: 15vw;
+    top: 21vw;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+
+  #for-parents {
+    background-color: white;
+    color: black;
+    left: 15vw;
+    width: 50vw;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+}
+
+@media (max-width: 764px) {
+  #home {
+    width: 100%;
+    height: 80vw;
+  }
+
+  #home-display-holder {
+    width: 96vw;
+    height: 80vw;
+  }
+
+  .home-media {
+    display: none;
+  }
+
+  .home-display {
+    #display-1-img,
+    #display-1-img,
+    #display-1-img {
+      width: 95vw;
+      height: 80vw;
+      margin-left: -3vw;
+      object-fit: cover;
+    }
+  }
+
+  #home-next-button-holder {
+    top: 35vw;
+  }
+
+  .display-1-input {
+    position: relative;
+    bottom: 0.1vw;
+    right: 15vw;
+    border-radius: 1vw;
+    outline: none;
+    border: none;
+    height: 4vw;
+    font-weight: lighter;
+    font-size: 2.3vh;
+    width: 30vw;
+  }
+
+  #display-1-inputadress {
+    display: none;
+  }
+
+  #display-1-inputlist {
+    position: absolute;
+    top: 47vw;
+    left: 7vw;
+    background-color: #ffffff;
+    width: 70vw;
+    height: 8.5vw;
+    border-radius: 3vw;
+  }
+
+  #display-1-submitinput {
+    top: 0.7vw;
+    right: 0.5vw;
+    border-radius: 2.5vw;
+    width: 14vw;
+    height: 7vw;
+  }
+
+  .display-1-input {
+    bottom: 0.5vw;
+    right: 5vw;
+    border-radius: 0vw;
+    height: 3vw;
+    font-size: 2vh;
+    width: 55vw;
+  }
+
+  .display-1-inputimage {
+    width: 3.5vw;
+    height: 3.5vw;
+    margin-right: 7.5vw;
+    margin-top: 1.2vh;
+  }
+
+  #display-1-title {
+    font-size: 4vw;
+    line-height: 4vw;
+    left: 7.5vw;
+    top: 34vw;
+  }
+
+  #display-2-title {
+    color: #ffffff;
+    position: relative;
+    font-size: 5vw;
+    line-height: 5vw;
+    left: 15vw;
+    top: 31vw;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+
+  #hero-buttons-list {
+    position: absolute;
+    top: -15vw;
+    left: 22vw;
+    height: 5vw;
+    width: 25vw;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .hero-navigation-button {
+    width: 22vw;
+    height: 7.5vw;
+    line-height: 8vw;
+    font-size: 3vw;
+    top: 28vh;
+    left: -8vw;
+  }
+
+  #for-parents {
+    display: none;
+  }
+
+  #display-3-title {
+    font-size: 3.5vw;
+    line-height: 4.5vw;
+    left: 8vw;
+    top: 39vw;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+
+  #teacher-join-us {
+    top: 39.3vh;
+    left: 8vw;
+    width: 70vw;
+  }
+}
+
+@media (max-width: 749px) {
+  #teacher-join-us {
+    top: 70vh;
+    left: 8vw;
+    width: 70vw;
+  }
+}
+
+@media (max-width: 375px) {
+  #hero-buttons-list {
+    position: absolute;
+    top: -15vw;
+    left: 22vw;
+    height: 5vw;
+    width: 25vw;
+  }
+
+  .hero-navigation-button {
+    width: 22vw;
+    height: 7.5vw;
+    line-height: 8vw;
+    font-size: 3vw;
+    top: 28vh;
+    left: -8vw;
+  }
+
+  #for-parents {
+    display: none;
+  }
+
+  #display-3-title {
+    font-size: 3.5vw;
+    line-height: 4.5vw;
+    left: 8vw;
+    top: 39vw;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+
+  #teacher-join-us {
+    top: 39vh;
+    left: 8vw;
+    width: 70vw;
+  }
+}

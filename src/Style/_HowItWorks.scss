@@ -1,0 +1,137 @@
+.HIW-Container {
+  position: relative;
+  height: 140vh;
+  width: 100%;
+  background-image: url("../Assets/HIW-BG.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: scale 7s ease-in-out 0s infinite normal both;
+  z-index: -9999;
+}
+
+.text-h1 {
+  position: absolute;
+  top: 15vh;
+  width: 100%;
+  h1 {
+    font-size: 3.5vw;
+    color: rgb(43, 43, 43);
+    text-align: center;
+  }
+}
+
+.HIW-Holder {
+  position: relative;
+  top: 37vh;
+  height: 100%;
+  width: 100%;
+}
+
+.HIW-Cards {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0vh 4vw;
+  width: auto;
+}
+
+.HIW-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  img {
+    height: 33vh;
+    width: 19vw;
+    margin-bottom: 5.5vh;
+    animation: scale 5s ease-in-out 0s infinite normal both;
+  }
+
+  h2 {
+    font-size: 2.5vh;
+    font-weight: bold;
+    color: rgb(43, 43, 43);
+  }
+
+  p {
+    font-size: 2vh;
+    text-align: center;
+    margin-top: 2vh;
+  }
+}
+
+#HIW-Book {
+  img {
+    height: 33vh;
+    width: 27vw;
+    animation: scale 5s ease-in-out 0s infinite normal both;
+  }
+}
+
+@keyframes scale {
+  0% {
+    opacity: 1;
+    transform: translateY(-50px);
+  }
+
+  50% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(-50px);
+  }
+}
+
+@media (max-width: 375px) {
+  .HIW-Container {
+    background: none;
+    height: 210vh;
+  }
+
+  .HIW-Cards {
+    flex-direction: column;
+  }
+
+  .text-h1 {
+    margin-top: 13vh;
+    width: 100%;
+    h1 {
+      font-size: 5.5vw;
+    }
+  }
+
+  .HIW-content {
+    img {
+      height: 31.7vh;
+      width: 50vw;
+      margin-top: 12vh;
+      margin-bottom: 0.5vh;
+    }
+
+    h2 {
+      margin-top: -1vh;
+      font-size: 2.5vh;
+      font-weight: bold;
+      color: rgb(43, 43, 43);
+    }
+
+    p {
+      font-size: 2vh;
+      text-align: center;
+      margin-top: 1vh;
+    }
+  }
+
+  #HIW-Book {
+    img {
+      height: 33vh;
+      width: 65vw;
+      margin-bottom: 1vh;
+      animation: scale 5s ease-in-out 0s infinite normal both;
+    }
+  }
+}
