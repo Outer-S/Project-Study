@@ -47,13 +47,13 @@ function HowItWorks(){
                     </li>
                 </ul>
             </div>
-                <div class="shape shapeAnimationOne l-10 t-60">
+                <div className="shape shapeAnimationOne l-10 t-60">
                     <img src={shape1}  alt="Shape"/>
                 </div>
-                <div class="shape shapeAnimationTwo l-10 t-5">
+                <div className="shape shapeAnimationTwo l-10 t-5">
                     <img src={shape4}  alt="Shape"/>
                 </div>
-                <div class="shape shapeAnimationThree r-10 t-100">
+                <div className="shape shapeAnimationThree r-10 t-100">
                     <img src={shape5} alt="Shape"/>
                 </div> 
 

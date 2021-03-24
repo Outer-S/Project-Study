@@ -22,8 +22,8 @@ SwiperCore.use([Navigation]);
 function SubjectsList () {
     return (
         
-        <div class="subjects">
-            <slider class="subjects-list-container">
+        <div className="subjects">
+            <div className="subjects-list-container">
                 
                 <Swiper
                     spaceBetween={20}
@@ -43,14 +43,14 @@ function SubjectsList () {
                 <SwiperSlide className = "subjects-list-class" id="subject"><img className="subject-img"  src={language} alt="programing"/><h1 className="subject-tilte">Language</h1></SwiperSlide>
 
             </Swiper>
-        </slider>
-        <div class="shape shapeAnimationOne l-10 t-60">
+        </div>
+        <div className="shape shapeAnimationOne l-10 t-60">
             <img src={shape1}  alt="Shape"/>
         </div>
-        <div class="shape shapeAnimationTwo l-70 t-60">
+        <div className="shape shapeAnimationTwo l-70 t-60">
             <img src={shape2}  alt="Shape"/>
         </div>
-        <div class="shape shapeAnimationThree l-50 t-100">
+        <div className="shape shapeAnimationThree l-50 t-100">
             <img src={shape3} alt="Shape"/>
         </div> 
       </div>
